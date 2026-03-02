@@ -54,3 +54,4 @@ const lv_img_dsc_t tmu_logo = {
   .header.h = 44,
   .data_size = 404,
   .data = tmu_logo_map,
+  };
