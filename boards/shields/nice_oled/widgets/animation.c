@@ -163,8 +163,9 @@ LV_IMG_DECLARE(vip_marcos);
 #define FIXED_IMAGE_VIP_MARCOS &vip_marcos
 
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_TMU)
-LV_IMG_DECLARE(tmu_logo)
+LV_IMG_DECLARE(tmu_logo);
 #define FIXED_IMAGE_TMU_LOGO &tmu_logo
+
 #else
 
 LV_IMG_DECLARE(vim);
