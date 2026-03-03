@@ -1,3 +1,5 @@
+##Originally forked from https://github.com/mctechnology17/zmk-nice-oled
+
 # nice!oled - nice!epaper - nice!custom
 ![nice_oled_demo](./assets/nice_oled_demo.GIF)
 ![nice_epaper_demo](./assets/nice_epaper_demo.GIF)
