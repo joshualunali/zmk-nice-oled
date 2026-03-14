@@ -166,6 +166,10 @@ LV_IMG_DECLARE(vip_marcos);
 LV_IMG_DECLARE(tmu_logo);
 #define FIXED_IMAGE_TMU_LOGO &tmu_logo
 
+#elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_NU)
+LV_IMG_DECLARE(nu);
+#define FIXED_IMAGE_NU &nu
+
 #else
 
 LV_IMG_DECLARE(vim);
@@ -206,6 +210,8 @@ void draw_animation(lv_obj_t *canvas, struct zmk_widget_screen *widget) {
     lv_img_set_src(art, FIXED_IMAGE_VIP_MARCOS);
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_TMU)
     lv_img_set_src(art, FIXED_IMAGE_TMU_LOGO);
+#elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_NU)
+    lv_img_set_src(art, FIXED_IMAGE_NU);
 #else
     int length = sizeof(crystal_imgs) / sizeof(crystal_imgs[0]);
     srand(k_uptime_get_32());

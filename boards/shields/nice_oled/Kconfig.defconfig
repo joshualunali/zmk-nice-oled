@@ -165,6 +165,10 @@ config NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_TMU
     bool "TMU logo static image"
     default n
 
+config NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_NU
+    bool "NU logo static image"
+    default n
+
 config NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_VIP_MARCOS
 bool "Enable static vim_marcos on peripheral"
     default n
